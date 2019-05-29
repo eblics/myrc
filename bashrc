@@ -22,3 +22,29 @@ alias ls='/bin/ls --color=auto'
 alias grep='grep --color'
 #export http_proxy=http://lishuliang:lsl2001@114.55.164.225:8089
 #export https_proxy=https://lishuliang:lsl2001@114.55.164.25:8089
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tee [FILE]              echo text to standard output and file
