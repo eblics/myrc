@@ -63,7 +63,7 @@ Plug 'vim-airline/vim-airline'       "status line
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'                      "like syntastic,but execute asyn
 Plug 'majutsushi/tagbar'             "for ctags
-
+Plug 'vobornik/vim-mql4'             "for mql4 language
 call plug#end()  
 
 " enable tabline of airline
@@ -203,6 +203,17 @@ endif
 
 if exists(":Ack")
     let g:ackhighlight = 1
+endif
+
+if has('win32')
+    let g:python_host_prog="C:/ProgramData/Anaconda3_32/python.exe"
+    let g:python3_host_prog="C:/ProgramData/Anaconda3_32/python.exe"
+    set guifont=Courier_New:h9
+    set encoding=utf-8
+    set fileencoding=utf-8
+    source $VIMRUNTIME/delmenu.vim
+    source $VIMRUNTIME/menu.vim
+    language messages zh_CN.utf-8
 endif
 
 " Below is some good tips for vim, see the book "Practical vim edit text as the speed of thought"
