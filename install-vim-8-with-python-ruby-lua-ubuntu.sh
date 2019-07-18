@@ -9,7 +9,7 @@ apt-add-repository ppa:brightbox/ruby-ng
 apt-get update
 #
 ## installs everything needed to make/configure/build Vim
-apt-get -y install liblua5.1-dev luajit libluajit-5.1 python-dev python3-dev ruby-dev ruby2.1 ruby2.1w-dev libperl-dev libncurses5-dev libatk1.0-dev libx11-dev libxpm-dev libxt-dev
+apt-get -y install liblua5.1-dev luajit libluajit-5.1 python3-dev ruby-dev ruby2.1 ruby2.1w-dev libperl-dev libncurses5-dev libatk1.0-dev libx11-dev libxpm-dev libxt-dev
 #
 ##Optional: so vim can be uninstalled again via `dpkg -r vim`
 apt-get -y install checkinstall
@@ -33,8 +33,8 @@ cd ..
 --enable-perlinterp=dynamic \
 --enable-rubyinterp=dynamic \
 --with-ruby-command=/usr/bin/ruby \
---enable-pythoninterp=dynamic \
---with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+#--enable-pythoninterp=dynamic \
+#--with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
 --enable-python3interp \
 --with-python3-config-dir=/usr/lib/python3.4/config-3.4m-x86_64-linux-gnu/ \
 --enable-luainterp \
@@ -42,11 +42,11 @@ cd ..
 --enable-cscope \
 --enable-gui=auto \
 --with-features=huge \
---with-x \
+#--with-x \
 --enable-fontset \
 --enable-largefile \
 --disable-netbeans \
---with-compiledby="YOUR NAME" \
+--with-compiledby="eblics" \
 --enable-fail-if-missing
 
 # this this is the compilation step. It should also create the symlink of the binary
