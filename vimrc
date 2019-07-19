@@ -69,7 +69,7 @@ Plug 'majutsushi/tagbar'             "for ctags
 Plug 'vobornik/vim-mql4'             "for mql4 language
 Plug 'yggdroot/indentline'           "for lines with same intent
 Plug 'tpope/vim-repeat'              "more support for repeating
-Plug 'svermeulen/vim-easyclip'       "better cut paste function
+"Plug 'svermeulen/vim-easyclip'       "better cut paste function
 call plug#end()  
 
 "------------------------------------for syntastic--------------------------------------------
@@ -246,7 +246,7 @@ if has('win32')
     set guifont=Courier_New:h9
     set encoding=utf-8
     set fileencoding=utf-8
-    source $VIMRUNTIME/delmenu.vim
+    "source $VIMRUNTIME/delmenu.vim
     source $VIMRUNTIME/menu.vim
     language messages zh_CN.utf-8
     let g:ycm_global_ycm_extra_conf = '~\vimfiles\plugged\YouCompleteMe\third_party\ycmd\.ycm_extra_conf.py'
